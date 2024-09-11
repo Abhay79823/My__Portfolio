@@ -1,0 +1,182 @@
+
+.logo-n{
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #6EF5FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+li{
+    transition: transform 0.3s ease-in-out;
+}
+li:hover{
+    transform: scale(1.20);
+}
+  /*----------------------------------------------About Section---------------------------------------*/
+.profile{
+    transition: transform 0.3s ease-in-out;
+}
+.profile:hover{
+    transform: scale(1.10);
+}
+/*------------------------------------------------Education section start----------------------------*/
+.box{
+    transition: transform 0.6s ease-in-out;
+}
+.box2{
+    animation:box2 5s  ease-in;
+    transition: transform 0.6s ease-in-out;
+}
+.box3{
+    animation:box3 5s  ease-in;
+    transition: transform 0.6s ease-in-out;
+}
+.box:hover, .box2:hover, .box3:hover{
+    transform: scale(1.10);
+}
+.education{
+    transform: scaleX(-1);
+}
+.range{
+    background-image:linear-gradient(90deg, #99F6E4 30% , #737373 20%,#737373 50%);
+}
+/*------------------------------------------------Education section end----------------------------*/
+/*--------------------------------------------Project section start--------------------------------------*/
+
+#projects, .proj1, .proj2, a{
+    transition: transform 0.3s ease-in-out;
+}
+#projects .proj1:hover, .proj2:hover, a:hover {
+    transform: scale(1.10);
+}
+
+
+.minor{
+    display:grid;
+    grid-column: 3;
+    grid-row: 3;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+}
+.frame{
+    width:100%;
+    height: 100%;
+    color:blue;
+    background-color: rgba(42, 47, 53, 0.8);
+    font-weight:600 ;
+    border-radius:8px;
+    
+    justify-content: center;
+    align-items: center;
+}
+.science{
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+
+.audio{
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+.data{
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+.marksheet{
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+@media (max-width: 768px) {
+    .minor{
+        display:grid;
+        grid-column: 2;
+        grid-row: 5;
+        grid-template-columns: repeat(1,1fr);
+        gap:40px;
+    }
+    .frame{
+    width: calc(100% - 80px);
+        
+    }
+    .science{
+        grid-column:1/2;
+        grid-row: 1/2;
+    }
+    
+    .audio{
+        grid-column:1/2;
+        grid-row: 2/3;
+    }
+    .data{
+        grid-column:1/2;
+        grid-row: 3/4;
+    }
+    .marksheet{
+        grid-column:1/2;
+        grid-row: 4/5;
+    }
+}
+/*--------------------------------------------Project section end--------------------------------------*/
+/*---------------------------------Contanct Me section start--------------------------------------------*/
+#contact{
+    background: rgb(52,52,56);
+    background: linear-gradient(90deg, rgba(52,52,56,1) 0%, rgba(65,67,70,1) 37%, rgba(216,225,233,0) 50%, rgba(65,67,70,1) 64%, rgba(52,52,56,1) 100%);
+}
+.icon{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    border-radius:6px ;
+    font-weight:500;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(216,225,233,0) 95%);
+}
+.icon:hover{
+    background-color: rgb(15, 9, 194);
+}
+form >input{
+    border-radius:3px;
+    height:32px;
+    color:black;
+    padding:0 6px;
+    display: flex;
+    margin-bottom: 8px;
+    background-color: #ddd;
+}
+
+/*------------------------------------------------Contact Me section end-----------------------------------------------*/
+
+@media (max-width:768px){
+    .box{
+        animation:box2 5s ease-in;
+    }
+    @keyframes box{
+        0%{
+            transform:translateX(-450px);
+        }
+        25%{
+            transform:translateX(0px)
+        }
+    }
+}
+@keyframes box2{
+    0%{
+        transform:translateX(-450px);
+    }
+    25%{
+        transform:translateX(0px)
+    }
+}
+@keyframes box3{
+    0%{
+        transform:translateX(-880px);
+    }
+    25%{
+        transform:translateX(0px)
+    }
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+    .profile {
+           margin-top: 80px;
+    }
+}

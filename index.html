@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+    <div class="flex items-center justify-between w-screen z-50 h-30 bg-neutral-900 px-4 md:px-8 fixed">
+        <div class="group flex md:hidden w-8 h-6">
+            <i class="ri-menu-line text-2xl font-semibold text-[#ddd] text-center"></i>
+            
+            <div class="hidden flex-col bg-neutral-900 gap-2 px-2 py-2 text-white absolute top-16 left-1 rounded-md group-hover:flex animate__animated animate__fadeInLeft">
+                <a href="#portfolio" class="hover:text-teal-400">My Portfolio</a>
+                <a href="#about" class="hover:text-teal-400">About</a>
+                <a href="#education" class="hover:text-teal-400">Education</a>
+                <a href="#certificates" class="hover:text-teal-400">Cerficates</a>
+                <a href="#projects" class="hover:text-teal-400">Projects</a>
+                <a href="#contact" class="hover:text-teal-400">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="flex ">
+            <i class="ri-ai-generate logo-n  text-6xl md:text-8xl  to-blue-500 relative">
+                <i class="ri-font-family logo-n  text-white text-4xl md:text-6xl absolute top-3 md:top-5 left-3 md:left-4 "></i>
+            </i>
+        </div>
+        <div class="hidden md:flex">
+            <ul class="flex items-center gap-4 text-white cursor-pointer ">
+                <li>
+                    <a href="#portfolio" class="hover:text-teal-400">My Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about" class="hover:text-teal-400">About</a>
+                </li>
+                <li>
+                    <a href="#education" class="hover:text-teal-400">Education</a>
+                </li>
+                <li>
+                    <a href="#certificates" class="hover:text-teal-400">Cerficates</a>
+                </li>
+                <li>
+                    <a href="#projects" class="hover:text-teal-400">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:text-teal-400 ">Contact Me</a>
+                </li>
+                
+                <li class=" bg-teal-400 py-2 px-4 text-center text-neutral-900 font-bold rounded-md hover:bg-white hover:text-teal-900 hover:text-lg">
+                    <a href="./images/Abhay Kumar Singh Resume .pdf"  download >Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+     
+    <!--================================================This is  "About" section=========================================================================-->
+    <div class=" bg-black min-h-[100vh] relative">
+        <h1 class="text-white opacity-0" id="portfolio">Portfolio</h1>
+        <div id="about" class="grid  md:grid-cols-3 gap-4 md:pt-40 lg:pt-28  ">
+            <div class="profile text-white sm:flex md:hidden items-center pt-16 md:pt-40  row-span-1 ">
+                <img src="./images/pic.png" class=" max-w-48 xl:w-72 max-h-48 xl:h-72 m-auto rounded-full" alt="profile pic">
+            </div>
+            <div class="flex flex-col gap-4 px-10 xl:pl-64  lg:pt-40  row-span-2  md:col-span-2 ">
+                <h2 class="text-lg md:text-2xl font-semibold text-white">Hi! My name is</h2>
+                <h1 class="text-xl md:text-3xl xl:text-5xl font-bold text-white font-serif hover:text-teal-300 ">ABHAY KUMAR SINGH.</h1>
+                <text class="md:text-xl  xl:text-3xl font-bold text-white">Aspiring Software Engineer</text>
+                <p class="font-semibold text-white">
+                    I am passionate about programming and proficient in various languages, 
+                    I thrive in collaborative environments where I can drive innovation and efficiency. 
+                    My goal is to create intuitive and impactful web applications, consistently enhancing my skills to deliver outstanding results.
+                </p>
+                <div class="bg-red-600 w-fit py-2 px-3  text-white border-2 border-black rounded-lg border-solid hover:border-red-600 hover:bg-black hover:text-red-600">Read More...</div>
+                <div class="md:hidden border-2 w-fit border-white py-1 px-4 bg-teal-400 text-center font-bold rounded-md hover:bg-white hover:text-teal-400">
+                    <a href="./images/Abhay Kumar Singh Resume .pdf" class="space-x-2" download>
+                        <i class="ri-download-2-fill text-black"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="text-white hidden md:flex  items-center md:pb-10 xl:pt-24  col-span-1">
+                <img src="./images/pic.png" class="profile w-60 xl:w-72 h-60 xl:h-72  rounded-full hover:animate__pulse" alt="profile pic">
+            </div>
+        </div>
+
+        
+        <div class="md:grid grid-rows gap-20 mx-4 md:mx-20">
+            <!--==============================================This is "Education" section====================================================================-->
+            <div id="education" class="md:row  pt-14  md:pt-28 ">
+                <h2 class="flex items-center justify-center gap-4 text-white text-center border border-white text-3xl font-semibold rounded-3xl py-2">
+                    <img src="./images/thought2.png" class="education">Education & Skill
+                </h2>
+                <div  data-aos="fade-right" class="md:grid flex flex-col xl:grid-cols-3 md:grid-cols-2  gap-10 mx-10 xl:mx-10 mt-8 mb-14">
+                    <div class="z-10 box flex  flex-col gap-4  text-white bg-black py-4 pl-4 shadow-xl shadow-white rounded-xl hover:bg-red-700 hover:shadow-red-300 hover:text-black">
+                        <h2 class="self-center text-2xl font-bold">B.Tech, Computer Science & Engineering</h2>
+                        <p class="text-xl">Amritsar College of Engineering and Technology, Amritsar, Punjab</p>
+                        <p><span class="font-semibold">Year of completion:</span> 2021-2025</p>
+                    </div>
+                    <div class="box2 z-10 flex flex-col gap-4 text-white bg-black py-4 pl-4 shadow-xl shadow-white rounded-xl hover:bg-red-700 hover:shadow-red-300 hover:text-black">
+                        <h2 class="self-center text-2xl font-bold">Senior Secondary (XII), Science</h2>
+                        <p class="text-xl">Vivekanand Mission Vidyapeeth, Madhubani, Bihar</p>
+                        <p><span class="font-semibold">Board:-</span> Central Board Of Secondary Education</p>
+                        <p><span class="font-semibold">Year of completion:</span> 2021</p>
+                        <p><span class="font-semibold">Percentage:</span> 62.60%</p>
+                    </div>
+                    <div class="box3  z-10 flex flex-col gap-4 text-white bg-black py-4 pl-4  shadow-xl shadow-white rounded-xl hover:bg-red-700 hover:shadow-red-300  hover:text-black">
+                        <h2 class="self-center text-2xl font-bold">Secondary (X)</h2>
+                        <p class="text-xl">SS International Public School Karjapatti Kamtaul Keoti Darbhanga ,Bihar</p>
+                        <p><span class="font-semibold">Board:-</span> Central Board Of Secondary Education</p>
+                        <p><span class="font-semibold">Year of completion:-</span> 2019</p>
+                        <p><span class="font-semibold">Percentage:-</span> 83.80%</p>
+                    </div>
+                </div>
+                <div class="text-white  space-y-4 border-white rounded-lg mx-10 xl:mx-20 mt-10 px-10 py-10 bg-slate-900">
+                    <div class="">HTML/CSS
+                       <div class="group bg-gradient-to-r from-teal-200 from-90% to-neutral-500 to-10% h-2 rounded-full mt-2 relative">
+                        <div class="hidden w-fit bg-gray-500 px-2 rounded-lg absolute right-24 group-hover:block">90%</div>
+                       </div>
+                    </div>
+                    <div class="">Tailwind CSS
+                        <div class="group bg-gradient-to-r from-teal-200 from-80% to-neutral-500 to-20% h-2 rounded-full mt-2 relative">
+                         <div class="hidden w-fit bg-gray-500 px-2 rounded-lg absolute right-2 md:right-44 group-hover:block">80%</div>
+                        </div>
+                    </div>
+                    <div class="">JavaScript
+                        <div class="group bg-gradient-to-r from-teal-200 from-60% to-neutral-500 to-40% h-2 rounded-full mt-2 relative">
+                         <div class="hidden w-fit bg-gray-500 px-2 rounded-lg absolute right-6 md:right-96 group-hover:block">60%</div>
+                        </div>
+                    </div>
+                    <div class="">ReactJs
+                        <div class="range group  h-2 rounded-full mt-2 relative">
+                         <div class="hidden w-fit bg-gray-500 px-2 rounded-lg absolute left-10 md:left-72 group-hover:block">30%</div>
+                        </div>
+                    </div>
+                    <div class="">C++
+                        <div class="group bg-gradient-to-r from-teal-200 from-70%  to-neutral-500 to-30% h-2 rounded-full mt-2 relative">
+                         <div class="hidden w-fit bg-gray-500 px-2 rounded-lg absolute right-10 md:right-72 group-hover:block">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--==========================================This is "Cerficates" section=======================================================-->
+            <div id="certificates" class="flex flex-col md:row  justify-center pt-14  md:pt-24">
+                <div class="flex justify-center items-center   gap-4 text-white text-center border border-white text-3xl font-semibold rounded-3xl py-2">
+                    <img src="./images/diploma.png" class="w-12 h-12 my-1">
+                    <h2 class="pb-2">Certificates</h2>
+                </div>
+                <div class="md:flex justify-between xl:mx-24 md:mx-2  text-white">
+                    <div class="flex flex-col">
+                        <div class="self-center bg-white w-1 h-24"></div>
+                        <div class="flex flex-col gap-2 items-center border-2 border-white px-4 py-2 rounded-2xl">
+                            <h1  class="flex flex-nowrap">Web development Training</h1>
+                            <a href="images/WD Training.pdf"  class="text-teal-300" target="__blank">View Certificate</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col">
+                        <div class="self-center bg-white w-1 h-24"></div>
+                        <div class="flex flex-col  gap-2  items-center border-2 border-white px-4 py-2 rounded-2xl">
+                            <h1 class="flex flex-nowrap">TCS iON Career Edge - Young Professional</h1>
+                            <a href="images/tcs certificate.png"  class="flex flex-nowrap text-teal-300">View Certificate</a>
+                        </div> 
+                    </div> 
+
+                    <div class="flex flex-col ">
+                        <div class="self-center bg-white w-1 h-24"></div>
+                        <div class="flex flex-col gap-2 items-center border-2 border-white px-4 py-2 rounded-2xl">
+                            <h1>Responsive Web Design</h1>
+                            <a href="images/developer.png"   class="text-teal-300">View Certificate</a>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <!--==========================================This is "Projects" section=======================================================-->
+            <div id="projects" class=" pt-28 ">
+                <h2 class="flex items-center justify-center gap-4 text-white border border-white text-3xl font-semibold rounded-3xl py-2">
+                    <img src="./images/project2.png">Projects
+                </h2>
+                <div class="grid grid-rows-2 gap-20 md:gap-28 text-white mt-10 md:mt-28 mx-4">
+                    <div class="grid md:grid-cols-9 gap-2 ">
+                        <div class="flex flex-col gap-4 col-span-5 md:pr-12">
+                            <h2 class="text-center text-xl font-serif font-bold">Project 1</h2>
+                            <div class="md:hidden">
+                                    <img src="./images/carrotImg.png" class="proj1 max-w-[100%] rounded-md">
+
+                            </div>
+                            <h3 class=" text-3xl font-semibold">Carrot</h3>
+                            <p>
+                                 Carrot combines a sleek, minimalist design with smooth, responsive functionality, 
+                                offering a seamless shopping experience. The clean layout, intuitive navigation, 
+                                and optimized performance ensure that users can easily browse and purchase products, 
+                                showcasing my ability to create both visually appealing and user-friendly websites.
+                            </p>
+                            <a href="https://abhay79823.github.io/Carrot/" target="_blank" class=" text-2xl w-fit px-2 font-semibold text-blue-500">Visit Site</a>
+                        </div>
+                        <div class="col-span-4 hidden md:block">
+    
+                                <img src="./images/carrotImg.png" class="proj1 rounded-md">
+    
+                        </div>
+                    </div>
+                    <div class="md:grid grid-cols-9 gap-2 ">
+                        <div class="col-span-4 md:mt-6">
+                            <h2 class="md:hidden text-center font-serif text-xl font-bold mb-6">Project 2</h2>
+                        
+                                <img src="./images/da.png" class="proj2 rounded-md">
+                        
+                        </div>
+                        <div class="flex flex-col gap-4 col-span-5 md:pl-12">
+                            <h2 class="hidden md:block text-center font-serif text-xl font-bold">Project 2</h2>
+                            <h3 class=" text-3xl font-semibold">Atg.World</h3>
+                            <p class="">
+                                Atg.World is a design-focused project, showcasing a sleek and minimalist layout intended purely for visual presentation. 
+                                It's crafted to highlight design principles without the implementation of full functionality or back-end features.
+                            </p>
+                            <a href="https://abhay79823.github.io/AtgWorld/" target="_blank" class=" text-xl font-semibold  w-fit px-2 text-blue-500">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="title flex justify-center items-center pt-8 md:pt-20 pb-10">
+                    <h2 class="text-white  font-serif font-bold text-2xl  underline">Minor Projects</h2>
+                </div>
+                <div class="minor  rounded-lg">
+
+                    <div class="science group  px-10 md:px-0 rounded-lg relative">
+                        <img src="./images/science.png" alt="ScienceShift" class="pt-1 rounded-lg">
+                        <div class="frame hidden  group-hover:flex absolute top-0  animate__animated animate__slideInUp">
+                            <a href="https://abhay79823.github.io/ScienceShift/" target="_blank" class="bg-blue-600 text-white py-1 px-2 md:py-2 text-2xl md:px-4 rounded-md opacity-100">Visit Site</a>
+                        </div>    
+                    </div>
+                    <div class="audio px-10 md:px-0 rounded-lg group relative">
+                        <img src="./images/audio.png" alt="Audio_uploader" class=" rounded-lg">
+                        <div class="frame hidden  group-hover:flex  absolute top-0 animate__animated animate__slideInUp">
+                            <a href="https://abhay79823.github.io/Audio_player/" target="_blank" class="bg-blue-600 text-white py-1 px-2 md:py-2 text-2xl md:px-4 rounded-md opacity-100">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="data px-10 md:px-0 rounded-lg group relative">
+                        <img src="./images/data.png" alt="Data_maker" class=" rounded-lg">
+                        <div class="frame hidden group-hover:flex absolute top-0 animate__animated animate__slideInUp">
+                            <a href="https://abhay79823.github.io/Data_creator/" target="_blank" class="bg-blue-600 text-white py-1 px-2 md:py-2 text-2xl md:px-4 rounded-md opacity-100">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="marksheet px-10 md:px-0 rounded-lg group relative">
+                        <img src="./images/mark-create.png" alt="Mark_creator" class=" rounded-lg">
+                        <div class="frame hidden group-hover:flex  absolute top-0 animate__animated animate__slideInUp">
+                            <a href="https://abhay79823.github.io/Marksheet_creator/" target="_blank" class="bg-blue-600 text-white py-1 px-2 md:py-2 text-2xl md:px-4 rounded-md opacity-100">Visit Site</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--==============================================This is "Contact Me" section====================================================================-->
+            <div id="contact" class="flex flex-col justify-center mt-12 lg:mt-20 mb-12 z-40">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 rounded-md  border-2 border-white text-white py-4 z-40">
+                    <div>
+                        <h2 class="text-center text-2xl font-bold mb-10">Contact Me</h2>
+                        <div class="flex flex-row md:flex-col gap-4 md:gap-6 justify-center px-16  ">
+                            <a href="https://www.linkedin.com/in/abhay-kumar-singh-843992212/" class="icon" target="_blank">
+                                <i class="ri-linkedin-box-fill text-black rounded-md w-12 md:w-14 h-12 md:h-14 text-center pt-1 text-4xl md:text-5xl bg-blue-600 hover:bg-white"></i>
+                                <h2 class="hidden md:block ">Linkedin</h2>
+                            </a>
+                           
+                            <a href="https://github.com/Abhay79823" class="icon" target="_blank">
+                                <i class="ri-github-fill text-black rounded-md w-12 md:w-14 h-12 md:h-14 text-center pt-1 text-4xl md:text-5xl bg-blue-600 hover:bg-white"></i>
+                                <h2 class="hidden md:block ">Github</h2>
+                            </a>
+
+                            <a href="https://discord.com/channels/@abhaykumarsingh798_00459" class="icon" target="_blank">
+                                <i class="ri-discord-fill text-black rounded-md w-12 md:w-14 h-12 md:h-14 text-center pt-1 text-4xl md:text-5xl bg-blue-600 hover:bg-white"></i>
+                                <h2 class="hidden md:block ">Discord</h2>
+                            </a>
+
+                            <a href="abhaykumarsinghcse798@gmail.com" class="icon" target="_blank">
+                                <i class="ri-google-fill text-black rounded-md w-12 md:w-14 h-12 md:h-14 text-center pt-1 text-4xl  md:text-5xl  bg-blue-600 hover:bg-white"></i>
+                                <h2 class="hidden md:block ">Email</h2>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="border-l-2">
+                        <h2 class="text-center text-2xl font-bold mb-4">Message Me</h2>
+                        <div>
+                            <form  class="flex flex-col text-white mx-8 xl:mx-28">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" required>
+
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" required>
+
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="message">Message</label>
+                                <textarea type="text" id="message" name="message" rows="5" class="text-black rounded-md mb-4 p-2 bg-[#ddd]" placeholder="Write the message...." required></textarea>
+
+                                <button type="submit" class="w-fit px-6 py-2 text-center text-xl text-black bg-teal-300 font-bold rounded-xl hover:text-teal-300 hover:bg-black">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!--=========================================="Footer section"========================================================================-->
+        <div class="flex  items-center  justify-center  h-20 bg-teal-300 relative">
+            <div class="flex gap-2 items-center ">
+                <i class="ri-copyright-line font-semibold text-2xl"></i>
+                <h2 class="font-bold">2024 ABHAY KUMAR SINGH </h2>
+            </div>  
+            <button class="group flex items-center   gap-2 bg-white rounded-full p-1 md:p-2 absolute right-2">
+                <i class=" ri-phone-fill text-xl md:text-3xl bg-blue-700 rounded-full w-8 shadow-xl shadow-blue-600 h-8 md:w-12 md:h-12 text-center pt-1 md:pt-2  text-black animate__animated animate__swing animate__slow  animate__infinite"></i>
+                <span class=" hidden md:block text-xl font-serif group-hover:block">01234-56789</span>
+            </button>
+        </div>
+    </div> 
+</body>
+</html>
